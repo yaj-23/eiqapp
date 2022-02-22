@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
-import 'package:eiqapp/dash/screens/Game_OnePage_Two.dart';
+import 'package:eiqapp/dash/screens/Game_One_Results.dart';
+
 
 // ignore: camel_case_types
-class Game_OnePage extends StatelessWidget {
-  final pageImg1 = 'assets/images/emotion_training_img_one.png';
-  final pageImg2 = 'assets/images/emotion_training_img_two.png';
-  final pageImg3 = 'assets/images/emotion_training_img_three.png';
-  final pageImg4 = 'assets/images/emotion_training_img_four.png';
+class Game_OnePage_Two extends StatelessWidget {
+  final pageImg1 = 'assets/images/emotion_training_img_five.png';
+  final pageImg2 = 'assets/images/emotion_training_img_six.png';
+  final pageImg3 = 'assets/images/emotion_training_img_seven.png';
+  final pageImg4 = 'assets/images/emotion_training_img_eight.png';
 
   @override
   Widget build(BuildContext context) {
@@ -77,7 +78,7 @@ class Game_OnePage extends StatelessWidget {
                         color: Colors.black,
                         fontFamily: 'SF Display',
                         fontWeight: FontWeight.w400,
-                        fontSize: 40),
+                        fontSize: 40),  
                   )),
                 ),
               ],
@@ -88,15 +89,14 @@ class Game_OnePage extends StatelessWidget {
                 "Tap on an image that resonates with you right now",
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                    color: Colors.green,
-                    fontFamily: 'SF Display',
-                    fontWeight: FontWeight.w500,
-                    fontSize: 18),
+                  color: Colors.green,
+                  fontFamily: 'SF Display',
+                  fontWeight: FontWeight.w500,
+                  fontSize: 18
+                ),
               ),
             ),
-            SizedBox(
-              height: 50,
-            ),
+            SizedBox(height: 50,),
             Container(
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -108,7 +108,7 @@ class Game_OnePage extends StatelessWidget {
                             context,
                             PageTransition(
                                 type: PageTransitionType.rightToLeft,
-                                child: Game_OnePage_Two()));
+                                child: Game_One_Results()));
                       },
                       child: Container(
                       height: 125,
@@ -126,7 +126,7 @@ class Game_OnePage extends StatelessWidget {
                             context,
                             PageTransition(
                                 type: PageTransitionType.rightToLeft,
-                                child: Game_OnePage_Two()));
+                                child: Game_One_Results()));
                       },
                       child: Container(
                       height: 125,
@@ -140,9 +140,7 @@ class Game_OnePage extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(
-              height: 50,
-            ),
+            SizedBox(height: 50,),
             Container(
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -154,7 +152,7 @@ class Game_OnePage extends StatelessWidget {
                             context,
                             PageTransition(
                                 type: PageTransitionType.rightToLeft,
-                                child: Game_OnePage_Two()));
+                                child: Game_One_Results()));
                       },
                       child: Container(
                       height: 125,
@@ -165,14 +163,14 @@ class Game_OnePage extends StatelessWidget {
                     )),
                     
                   ),
-                  Container(
+               Container(
                     child: InkWell(
                       onTap: () {
                         Navigator.push(
                             context,
                             PageTransition(
                                 type: PageTransitionType.rightToLeft,
-                                child: Game_OnePage_Two()));
+                                child: Game_One_Results()));
                       },
                       child: Container(
                       height: 125,
