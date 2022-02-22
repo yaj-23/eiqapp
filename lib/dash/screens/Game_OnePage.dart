@@ -70,11 +70,24 @@ class Game_OnePage extends StatelessWidget {
                         color: Colors.black,
                         fontFamily: 'SF Display',
                         fontWeight: FontWeight.w400,
-                        fontSize: 40),
+                        fontSize: 40),  
                   )),
                 ),
               ],
             ),
+            SizedBox(height: 30,),
+            Container(
+              child: Text(
+                "Tap on an image that resonates with you right now",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Colors.green,
+                  fontFamily: 'SF Display',
+                  fontWeight: FontWeight.w500,
+                  fontSize: 18
+                ),
+              ),
+            )
           ],
         ),
       ),
