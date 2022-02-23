@@ -8,6 +8,8 @@ class Game_OnePage extends StatelessWidget {
   final pageImg2 = 'assets/images/emotion_training_img_two.png';
   final pageImg3 = 'assets/images/emotion_training_img_three.png';
   final pageImg4 = 'assets/images/emotion_training_img_four.png';
+  final bgImage = 'assets/images/gameonebgimage.png';
+  
 
   @override
   Widget build(BuildContext context) {
@@ -15,6 +17,14 @@ class Game_OnePage extends StatelessWidget {
       resizeToAvoidBottomInset: false,
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
+        child: Container(
+          height: MediaQuery.of(context).size.height,
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage(bgImage),
+              fit: BoxFit.fill  
+            )
+          ),
         child: Column(
           children: <Widget>[
             Container(
@@ -93,9 +103,6 @@ class Game_OnePage extends StatelessWidget {
                     fontWeight: FontWeight.w500,
                     fontSize: 18),
               ),
-            ),
-            SizedBox(
-              height: 50,
             ),
             Container(
               child: Row(
@@ -189,6 +196,6 @@ class Game_OnePage extends StatelessWidget {
           ],
         ),
       ),
-    );
+    ));
   }
 }
