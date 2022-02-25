@@ -1,6 +1,5 @@
 import 'package:eiqapp/common/LoginPage.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/painting.dart';
 import 'package:page_transition/page_transition.dart';
 
 class CreateAccountPage extends StatelessWidget {
@@ -12,7 +11,7 @@ class CreateAccountPage extends StatelessWidget {
 
       resizeToAvoidBottomInset : false,
 
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.transparent,
       body: SingleChildScrollView (
         child: Column(
           children: <Widget>[
@@ -32,7 +31,7 @@ class CreateAccountPage extends StatelessWidget {
                         child: Text(
                           "emotional",
                           style: TextStyle(
-                            color: Colors.white,
+                            color: Colors.black,
                             fontSize: 40,
                             fontFamily: 'SF Display',
                             fontWeight: FontWeight.w700
@@ -48,7 +47,7 @@ class CreateAccountPage extends StatelessWidget {
                         child: Text(
                           "intelligence lab.",
                           style: TextStyle(
-                            color: Colors.white,
+                            color: Colors.black,
                             fontSize: 40,
                             fontWeight: FontWeight.w100,
                             fontFamily: 'SF Display'

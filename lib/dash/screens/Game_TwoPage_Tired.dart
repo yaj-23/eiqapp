@@ -1,9 +1,10 @@
-import 'package:eiqapp/dash/screens/Game_TwoPage_Angry.dart';
+import 'package:eiqapp/dash/Dashboard.dart';
+import 'package:eiqapp/dash/screens/Game_TwoPage_Happy.dart';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 // ignore: camel_case_types
-class Game_TwoPage extends StatelessWidget {
-  final bgImage = 'assets/images/gametwobgimg.png';
+class Game_TwoPage_Tired extends StatelessWidget {
+  final bgImage = 'assets/images/gametwobgtired.png';
 
   @override
   Widget build(BuildContext context) {
@@ -76,79 +77,8 @@ class Game_TwoPage extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(height: 50),
-              Stack(
-                children: <Widget>[
-                  Container(
-                    padding: EdgeInsets.fromLTRB(50, 0, 0, 0),
-                    alignment: Alignment.centerLeft,
-                    child: Text(
-                      "How It Works",
-                      textAlign: TextAlign.left,
-                      style: TextStyle(
-                            color: Colors.white,
-                            fontFamily: 'Raustila',
-                            fontSize: 35
-                      ),
-                    ),
-                  ),
-                  Container(
-                    padding: EdgeInsets.fromLTRB(40, 70, 0, 0),
-                    alignment: Alignment.centerLeft,
-                    child: Text(
-                      "•  connect heart rate monitor to app",
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontFamily: 'SF Display',
-                          fontWeight: FontWeight.w200,
-                          fontSize: 20
-                      ),
-                    ),
-                  ),
-                  SizedBox(height: 70,),
-                  Container(
-                    padding: EdgeInsets.fromLTRB(40, 140, 0, 0),
-                    alignment: Alignment.centerLeft,
-                    child: Text(
-                      "• try to express the emotion shown on\nthe screen with the best of your ability",
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontFamily: 'SF Display',
-                          fontWeight: FontWeight.w200,
-                          fontSize: 20
-                      ),
-                    ),
-                  ),
-
-                  Container(
-                    padding: EdgeInsets.fromLTRB(40, 210, 0, 0),
-                    alignment: Alignment.centerLeft,
-                    child: Text(
-                      "•  your heart rate will be recorded, tap\nnext to view the next emotion",
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontFamily: 'SF Display',
-                          fontWeight: FontWeight.w200,
-                          fontSize: 20
-                      ),
-                    ),
-                  ),
-                  Container(
-                    padding: EdgeInsets.fromLTRB(40, 280, 0, 0),
-                    alignment: Alignment.centerLeft,
-                    child: Text(
-                      "•  track progress with results ",
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontFamily: 'SF Display',
-                          fontWeight: FontWeight.w200,
-                          fontSize: 20
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(height: 30,),
+              SizedBox(height: 500),
+  
               Container(
               alignment: Alignment.centerLeft,
               height: 50,
@@ -168,10 +98,10 @@ class Game_TwoPage extends StatelessWidget {
                           context,
                           PageTransition(
                               type: PageTransitionType.rightToLeft,
-                              child: Game_TwoPage_Angry()));
+                              child: Game_TwoPage_Happy()));
                     },
                     child: Text(
-                      'get started',
+                      'next',
                       style: TextStyle(
                           fontFamily: 'SF Display',
                           fontWeight: FontWeight.w700,

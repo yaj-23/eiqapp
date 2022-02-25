@@ -1,7 +1,6 @@
 import 'package:eiqapp/common/CreateAccountPage.dart';
 import 'package:eiqapp/dash/Dashboard.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/painting.dart';
 import 'package:page_transition/page_transition.dart';
 
 class LoginPage extends StatelessWidget {
