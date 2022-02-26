@@ -1,9 +1,9 @@
+import 'package:eiqapp/dash/screens/Game_OverallResults.dart';
 import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:eiqapp/dash/screens/Homepage.dart';
 import 'package:eiqapp/dash/screens/Game_OnePage.dart';
 import 'package:eiqapp/dash/screens/Game_TwoPage.dart';
-import 'package:eiqapp/dash/screens/Heartrate.dart';
 
 class Dashboard extends StatefulWidget {
   @override
@@ -14,7 +14,7 @@ class _DashboardState extends State<Dashboard> {
   int index = 0;
   final navigationKey = GlobalKey<CurvedNavigationBarState>();
 
-  final screens = [Homepage(), Game_OnePage(), Game_TwoPage(), Heartrate()];
+  final screens = [Homepage(), Game_OnePage(), Game_TwoPage(), Game_OverallResults()];
 
   @override
   Widget build(BuildContext context) {

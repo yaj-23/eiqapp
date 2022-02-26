@@ -1,4 +1,6 @@
 import 'package:eiqapp/dash/Dashboard.dart';
+import 'package:eiqapp/dash/screens/Game_One_Results.dart';
+import 'package:eiqapp/dash/screens/Game_TwoPage_Results.dart';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 // ignore: camel_case_types
@@ -52,12 +54,12 @@ class Game_TwoPage_Smile extends StatelessWidget {
                     child: Align(
                       alignment: Alignment.center,
                       child: Text(
-                        "emotion",
+                        "emotions",
                         style: TextStyle(
                             color: Colors.white,
                             fontSize: 55,
                             fontFamily: 'SF Display',
-                            fontWeight: FontWeight.w700),
+                            fontWeight: FontWeight.w200),
                       ),
                     ),
                   ),
@@ -65,11 +67,11 @@ class Game_TwoPage_Smile extends StatelessWidget {
                     padding: EdgeInsets.fromLTRB(0, 50, 0, 0),
                     child: Align(
                         child: Text(
-                      "recognition training",
+                      "stretching",
                       style: TextStyle(
                           color: Colors.white,
                           fontFamily: 'SF Display',
-                          fontWeight: FontWeight.w200,
+                          fontWeight: FontWeight.w700,
                           fontSize: 40),
                       )
                     ),
@@ -97,7 +99,7 @@ class Game_TwoPage_Smile extends StatelessWidget {
                           context,
                           PageTransition(
                               type: PageTransitionType.rightToLeft,
-                              child: Dashboard()));
+                              child: Game_TwoPage_Results()));
                     },
                     child: Text(
                       'next',

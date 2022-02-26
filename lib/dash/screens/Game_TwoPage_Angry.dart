@@ -52,12 +52,12 @@ class Game_TwoPage_Angry extends StatelessWidget {
                     child: Align(
                       alignment: Alignment.center,
                       child: Text(
-                        "emotion",
+                        "emotions",
                         style: TextStyle(
                             color: Colors.white,
                             fontSize: 55,
                             fontFamily: 'SF Display',
-                            fontWeight: FontWeight.w700),
+                            fontWeight: FontWeight.w200),
                       ),
                     ),
                   ),
@@ -65,11 +65,11 @@ class Game_TwoPage_Angry extends StatelessWidget {
                     padding: EdgeInsets.fromLTRB(0, 50, 0, 0),
                     child: Align(
                         child: Text(
-                      "recognition training",
+                      "stretching",
                       style: TextStyle(
                           color: Colors.white,
                           fontFamily: 'SF Display',
-                          fontWeight: FontWeight.w200,
+                          fontWeight: FontWeight.w700,
                           fontSize: 40),
                       )
                     ),

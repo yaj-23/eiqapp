@@ -1,9 +1,11 @@
-import 'package:eiqapp/dash/screens/Game_TwoPage_Smile.dart';
+import 'package:eiqapp/dash/Dashboard.dart';
+import 'package:eiqapp/dash/screens/Game_TwoPage_Angry.dart';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 // ignore: camel_case_types
-class Game_TwoPage_Happy extends StatelessWidget {
-  final bgImage = 'assets/images/gametwobghappy.png';
+class Game_OverallResults extends StatelessWidget {
+  final bgImage = 'assets/images/gametwobgimg.png';
+  final trackerResults = 'assets/images/tracker.png';
 
   @override
   Widget build(BuildContext context) {
@@ -57,7 +59,7 @@ class Game_TwoPage_Happy extends StatelessWidget {
                             color: Colors.white,
                             fontSize: 55,
                             fontFamily: 'SF Display',
-                            fontWeight: FontWeight.w700),
+                            fontWeight: FontWeight.w200),
                       ),
                     ),
                   ),
@@ -65,7 +67,7 @@ class Game_TwoPage_Happy extends StatelessWidget {
                     padding: EdgeInsets.fromLTRB(0, 50, 0, 0),
                     child: Align(
                         child: Text(
-                      "stretching",
+                      "tracker",
                       style: TextStyle(
                           color: Colors.white,
                           fontFamily: 'SF Display',
@@ -76,8 +78,32 @@ class Game_TwoPage_Happy extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(height: 500),
-  
+              SizedBox(height: 50),
+              Container(
+                alignment: Alignment.centerLeft,
+                padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
+                child: Text(
+                  "Current Emotional State",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontFamily: 'SF Display',
+                    fontWeight: FontWeight.w500,
+                    fontSize: 30
+                  ),
+                ),
+              ),
+              SizedBox(height: 30),
+              Container(
+                height: 348,
+                decoration: BoxDecoration(
+                 image: DecorationImage(
+                   image: AssetImage(trackerResults),
+                   fit: BoxFit.fill
+                 )
+               ), 
+              ),
+              
+              SizedBox(height: 30,),
               Container(
               alignment: Alignment.centerLeft,
               height: 50,
@@ -97,10 +123,10 @@ class Game_TwoPage_Happy extends StatelessWidget {
                           context,
                           PageTransition(
                               type: PageTransitionType.rightToLeft,
-                              child: Game_TwoPage_Smile()));
+                              child: Dashboard()));
                     },
                     child: Text(
-                      'next',
+                      'Dashboard',
                       style: TextStyle(
                           fontFamily: 'SF Display',
                           fontWeight: FontWeight.w700,
