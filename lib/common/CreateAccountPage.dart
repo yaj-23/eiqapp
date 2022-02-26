@@ -11,7 +11,7 @@ class CreateAccountPage extends StatelessWidget {
 
       resizeToAvoidBottomInset : false,
 
-      backgroundColor: Colors.transparent,
+      backgroundColor: Colors.white,
       body: SingleChildScrollView (
         child: Column(
           children: <Widget>[
