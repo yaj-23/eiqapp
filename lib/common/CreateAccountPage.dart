@@ -31,7 +31,7 @@ class CreateAccountPage extends StatelessWidget {
                         child: Text(
                           "emotional",
                           style: TextStyle(
-                            color: Colors.black,
+                            color: Colors.white,
                             fontSize: 40,
                             fontFamily: 'SF Display',
                             fontWeight: FontWeight.w700
@@ -47,7 +47,7 @@ class CreateAccountPage extends StatelessWidget {
                         child: Text(
                           "intelligence lab.",
                           style: TextStyle(
-                            color: Colors.black,
+                            color: Colors.white,
                             fontSize: 40,
                             fontWeight: FontWeight.w100,
                             fontFamily: 'SF Display'
